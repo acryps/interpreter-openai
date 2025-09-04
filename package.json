@@ -1,0 +1,25 @@
+{
+	"name": "@acryps/interpreter-openai",
+	"description": "llm agnostic interface with tool calling",
+	"version": "0.0.1",
+	"type": "module",
+	"main": ".built/index.js",
+	"typings": ".built/index.d.ts",
+	"sideEffects": false,
+	"scripts": {
+		"build": "cd source && tsc && cd ..",
+		"declare": "cd declare && node index.js && cd ../source && tsc --noEmit && cd ..",
+		"preversion": "npm run declare && npm run build"
+	},
+	"license": "GPL-3.0-only",
+	"devDependencies": {
+		"@types/node": "^24.2.1",
+		"typescript": "^5.3.2"
+	},
+	"peerDependencies": {
+		"@acryps/interpreter": "0.x"
+	},
+	"dependencies": {
+		"openai": "^5.19.0"
+	}
+}

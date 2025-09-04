@@ -1,0 +1,7 @@
+node_modules
+
+# build output
+.built
+
+# generated declarations
+source/models.ts
