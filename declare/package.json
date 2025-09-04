@@ -1,0 +1,10 @@
+{
+	"environment": {
+		"openai": {
+			"apiKey": "OpenAI API Key"
+		}
+	},
+	"dependencies": {
+		"@acryps/environment": "^2.8.0"
+	}
+}
